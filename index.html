@@ -3,18 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple website</title>
-    <link rel="stylesheet" href="main.css">
-    <base href="">
-    <noscript></noscript>
+    <title>Aprendiendo CSS con Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Encabezado de prueba</h1>
-    <p>Parrafo de prueba</p>
-    <ul>
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-    </ul>
+<div class="container mt-4">
+
+    <header class="mb-4 text-center text-md-start">
+        <h1 class="display-4">CSS</h1>
+    </header>
+
+    <nav class="mb-4 border-bottom pb-2">
+        <ul class="nav nav-pills flex-column flex-sm-row">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="row g-4">
+        <section id="content" class="col-12 col-md-8">
+            <article class="article mb-4">
+                <h2>Título del artículo</h2>
+                <p>Texto del artículo</p>
+            </article>
+
+            <article class="article mb-4">
+                <h2>Título del artículo</h2>
+                <p>Texto del artículo</p>
+            </article>
+
+            <article class="article mb-4">
+                <h2>Título del artículo</h2>
+                <p>Texto del artículo</p>
+            </article>
+
+            <article class="article mb-4">
+                <h2>Título del artículo</h2>
+                <p>Texto del artículo</p>
+            </article>
+        </section>
+
+        <aside class="col-12 col-md-4">
+            <div class="bg-light p-3 rounded mb-4">
+                <h2 class="h4 mb-3">Barra lateral</h2>
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Término a buscar...">
+                    </div>
+                    <input type="submit" value="Buscar" class="btn btn-primary w-100">
+                </form>
+            </div>
+
+            <section class="d-flex flex-column gap-3">
+
+                <div class="card p-3 shadow-sm">
+                    <h3 class="h5">Título producto</h3>
+                    <img src="https://via.placeholder.com/150" alt="producto" class="img-fluid rounded my-2">
+                    <p class="mb-0 text-muted small">Texto de producto</p>
+                </div>
+
+                <div class="card p-3 shadow-sm">
+                    <h3 class="h5">Título producto</h3>
+                    <img src="https://via.placeholder.com/150" alt="producto" class="img-fluid rounded my-2">
+                    <p class="mb-0 text-muted small">Texto de producto</p>
+                </div>
+
+                <div class="card p-3 shadow-sm">
+                    <h3 class="h5">Título producto</h3>
+                    <img src="https://via.placeholder.com/150" alt="producto" class="img-fluid rounded my-2">
+                    <p class="mb-0 text-muted small">Texto de producto</p>
+                </div>
+
+                <div class="card p-3 shadow-sm">
+                    <h3 class="h5">Título producto</h3>
+                    <img src="https://via.placeholder.com/150" alt="producto" class="img-fluid rounded my-2">
+                    <p class="mb-0 text-muted small">Texto de producto</p>
+                </div>
+
+            </section>
+        </aside>
+    </div>
+
+    <footer class="mt-5 border-top pt-3 text-center text-muted">
+        Arnaldo Morales web dev &copy; 2026
+    </footer>
+</div>
 </body>
 </html>
